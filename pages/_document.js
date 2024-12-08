@@ -27,7 +27,7 @@ class MyDocument extends Document {
                             __html: `
                 if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function() {
-                    navigator.serviceWorker.register('/service-worker.js')
+                    navigator.serviceWorker.register('https://srinivas-batthula.github.io/todo/service-worker.js')
                     .then(function(registration) {
                         console.log('ServiceWorker registration successful');
                     })
