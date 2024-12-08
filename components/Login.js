@@ -73,6 +73,7 @@ export default function Login() {
                     method: 'POST',
                     credentials: 'include',       //To include all cookies (jwt-tokens)......
                     body: JSON.stringify(formData),
+                    mode:'cors',
                 });
 
                 const result = await response.json();
