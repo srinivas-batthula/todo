@@ -19,7 +19,7 @@ export default function FormP() {
     const [success, setSuccess] = useState("")
 
     function handleChange(e){
-        console.log("change")
+        // console.log("change")
         setVal({...val, [e.target.name]:e.target.value})
     }
 
