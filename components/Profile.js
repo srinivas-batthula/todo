@@ -132,7 +132,7 @@ export default function Profile() {
             <div className={styles.main}>
 
                 <div className={styles.child3} onClick={handleLogout}>
-                    <button>Logout</button>
+                    <button>Logout <i className="fa-solid fa-right-from-bracket" style={{fontSize:'1rem', marginLeft:'0.4rem', color:'black'}}></i></button>
                 </div>
 
                 <div className={styles.user}>
@@ -140,7 +140,7 @@ export default function Profile() {
                 </div>
 
                 <div className={styles.details} style={{marginBottom:'6.5rem'}}>
-                    <div style={{letterSpacing:'0.05rem', fontSize:'1.3rem', textAlign:'center', margin:'0.3rem'}}>
+                    <div style={{letterSpacing:'0.05rem', fontSize:'1.4rem', textAlign:'center', margin:'0.3rem'}}>
                         {
                             (user) ? user.username : "XYZ"
                         }

@@ -55,6 +55,7 @@
     padding: 0.65rem;
     cursor: pointer;
     text-align: center;
+    font-weight: 600;
 }
 .child:hover{
     box-shadow: 0 0 0.5rem rgb(69, 170, 221);
@@ -74,6 +75,7 @@
     padding: 0.65rem;
     cursor: pointer;
     text-align: center;
+    font-weight: 600;
 }
 .child3:hover{
     box-shadow: 0 0 0.5rem rgb(69, 170, 221);
@@ -124,7 +126,7 @@
 @media screen and (max-width:600px) {
     .child3{
         margin-right: 2rem;
-        margin-top: 28rem;
+        margin-top: 20rem;
         margin-bottom: 6.5rem;
     }
     .group{

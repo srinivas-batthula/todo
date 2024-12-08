@@ -23,7 +23,7 @@
 }
 
 .space {
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
     margin-bottom: 5rem;
     color: rgb(39, 175, 230);
     text-shadow: 0 0 1rem skyblue;
@@ -88,7 +88,7 @@
 .txt{
     text-align: center;
     letter-spacing: 0.1rem;
-    padding-top: 20rem;
+    padding-top: 19rem;
     position: fixed;
     padding-left: 40%;
     color: black;
