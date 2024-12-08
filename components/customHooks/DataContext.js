@@ -29,7 +29,7 @@ export const DataProvider = ({ children }) => {
                 setTimeout(() => {
                     console.log('Please Login to Continue')
                     router.push('/login')
-                }, 500)
+                }, 200)
             }
         }
         catch (e) {
@@ -39,7 +39,7 @@ export const DataProvider = ({ children }) => {
             setTimeout(() => {
                 console.log('Please Login to Continue')
                 router.push('/login')
-            }, 500)
+            }, 200)
         }
     }
 
