@@ -26,18 +26,20 @@ export const DataProvider = ({ children }) => {
                 setUser({})
                 setTasks([])
                 console.log('Refresh Failed')
-                if (res.Auth === false) {
-                    setTimeout(() => {
-                        console.log('Please Login to Continue')
-                        router.push('/login')
-                    }, 500)
-                }
+                setTimeout(() => {
+                    console.log('Please Login to Continue')
+                    router.push('/login')
+                }, 500)
             }
         }
         catch (e) {
             setUser({})
             setTasks([])
             console.log(e)
+            setTimeout(() => {
+                console.log('Please Login to Continue')
+                router.push('/login')
+            }, 500)
         }
     }
 
