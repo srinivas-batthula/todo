@@ -1,0 +1,56 @@
+.main{
+    width: 100%;
+    padding: 0.65rem;
+    margin-bottom: 0rem;
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    transition-duration: 0.25s;
+    transition-property: all;
+    /* margin-bottom: 0.1rem; */
+    bottom: 0;
+    position: fixed;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 0.1rem dodgerblue;
+    background: linear-gradient(0deg, #a978de, #92b9fc);
+}
+
+.child{
+    cursor: pointer;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    transition-duration: 0.25s;
+    transition-property: all;
+}
+.child:hover{
+    text-shadow: 0 0 0.3rem dodgerblue;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) and (min-width:450px) {
+    .child{
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .child{
+        margin-left: 16.5%;
+        margin-right: 16.5%;
+    }
+}

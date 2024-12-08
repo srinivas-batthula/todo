@@ -1,0 +1,100 @@
+.main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.main2{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    width: 65%;
+}
+
+.box{
+    border-radius: 5%;
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+    width: 30%;
+    padding: 1.1rem 0.1rem 1.1rem 0.1rem;
+    background-color: rgb(188, 188, 188);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.box1{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.graph{
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:536px) and (min-width:492px) {
+    .box{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:492px) {
+    .box{
+        font-size: 0.9rem;
+    }
+    .main2{
+        width: 80%;
+    }
+    .box{
+        width: 38%;
+    }
+}
+
+@media screen and (max-width:850px) and (min-width:700px) {
+    .graph{
+        width: 70%;
+        height: 70%;
+    }
+}
+@media screen and (max-width:700px) and (min-width:600px) {
+    .graph{
+        width: 85%;
+        height: 85%;
+    }
+}
+@media screen and (max-width:600px) {
+    .graph{
+        width: 94%;
+        height: 94%;
+    }
+}
+@media screen and (max-width:725px) {
+    .main2{
+        width: 75%;
+    }
+    .box{
+        width: 35%;
+    }
+}

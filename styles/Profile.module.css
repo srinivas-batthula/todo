@@ -1,0 +1,135 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(45deg, #5d16a9, #4085fc);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+.main2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.user{
+    margin-bottom: 2.5rem;
+    text-align: center;
+    color: white;
+    animation-name: userA;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition-duration: 0.35s;
+    transition-property: all;
+}
+.user:hover{
+    transform: scale(1.03);
+}
+@keyframes userA{
+    35%{
+        text-shadow: 0 0 0.71rem rgb(99, 211, 99);
+    }
+    85%{
+        text-shadow: 0 0 0.71rem rgb(159, 159, 159);
+    }
+}
+
+.child{
+    width: 8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.4rem;
+    position: relative;
+    transition-duration: 0.35s;
+    transition-property: all;
+    border-radius: 20%;
+    box-shadow: 0 0 0.15rem black;
+    padding: 0.65rem;
+    cursor: pointer;
+    text-align: center;
+}
+.child:hover{
+    box-shadow: 0 0 0.5rem rgb(69, 170, 221);
+}
+
+.child3{
+    width: 6.5rem;
+    margin-top: 25.5rem;
+    margin-bottom: 7rem;
+    margin-right: 5rem;
+    margin-left: auto;
+    position: relative;
+    transition-duration: 0.35s;
+    transition-property: all;
+    border-radius: 20%;
+    box-shadow: 0 0 0.2rem black;
+    padding: 0.65rem;
+    cursor: pointer;
+    text-align: center;
+}
+.child3:hover{
+    box-shadow: 0 0 0.5rem rgb(69, 170, 221);
+}
+
+.c1{
+    margin: 0.3rem;
+    animation-name: theme;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition-duration: 0.25s;
+    transition-property: all;
+}
+@keyframes theme {
+    0%{
+        color: white;
+    }
+    55%{
+        color: black;
+    }
+}
+
+.child1:active{
+    text-shadow: 0 0 0.25rem rgb(0, 0, 0);
+}
+
+.group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+    margin-bottom: 9rem;
+    margin-top: 2rem;
+}
+
+.groupChild{
+    margin: 2rem;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .child3{
+        margin-right: 2rem;
+        margin-top: 34rem;
+    }
+    .group{
+        flex-direction: column;
+    }
+    .groupChild{
+        margin: 1rem;
+    }
+}

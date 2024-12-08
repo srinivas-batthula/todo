@@ -1,0 +1,68 @@
+.main{
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    transition-duration: 0.3s;
+    transition-property: all;
+}
+
+.main3{
+    display: block;
+    position: relative;
+}
+
+.main2{
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    gap: 30%;
+}
+
+.child{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    transition-duration: 0.15s;
+    transition-property: all;
+}
+.child1:active{
+    text-shadow: 0 0 0.25rem rgb(0, 0, 0);
+}
+.child2:active{
+    text-shadow: 0 0 0.15rem rgb(0, 132, 255);
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width:900px) and (min-width:650px) {
+    .main2{
+        gap: 23%;
+    }
+}
+
+@media screen and (max-width:660px) and (min-width:500px) {
+    .main2{
+        gap: 17%;
+        margin-top: 0.2rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main2{
+        gap: 12%;
+        margin-top: 0.3rem;
+    }
+}
