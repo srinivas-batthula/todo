@@ -56,19 +56,21 @@
 
 
 @media screen and (max-width:536px) and (min-width:492px) {
+    .main2{
+        width: 85%;
+    }
     .box{
         font-size: 1rem;
+        width: 40%;
     }
 }
 @media screen and (max-width:492px) {
+    .main2{
+        width: 85%;
+    }
     .box{
         font-size: 0.9rem;
-    }
-    .main2{
-        width: 80%;
-    }
-    .box{
-        width: 38%;
+        width: 40%;
     }
 }
 
@@ -90,7 +92,7 @@
         height: 94%;
     }
 }
-@media screen and (max-width:725px) {
+@media screen and (max-width:725px) and (min-width:536px) {
     .main2{
         width: 75%;
     }

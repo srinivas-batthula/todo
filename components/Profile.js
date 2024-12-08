@@ -116,7 +116,7 @@ export default function Profile() {
                 console.log('Logged Out')
                 setTimeout(()=>{
                     router.push('/login')
-                }, 600)
+                }, 200)
             }
             else{
                 console.log('Error while Logging Out, Try again')
@@ -136,7 +136,7 @@ export default function Profile() {
                 </div>
 
                 <div className={styles.user}>
-                    <i className="fa-solid fa-circle-user" style={{fontSize:'10rem'}}></i>
+                    <i className="fa-solid fa-circle-user" style={{fontSize:'11rem'}}></i>
                 </div>
 
                 <div className={styles.details} style={{marginBottom:'6.5rem'}}>

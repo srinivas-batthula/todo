@@ -30,7 +30,7 @@ export const DataProvider = ({ children }) => {
                 setTasks([])
                 console.log('Refresh Failed')
                 // setTimeout(() => {
-                console.log('Please Login to Continue')
+                console.log('Please Login to Continue1')
                 router.push('/login')
                 // }, 50)
             }
@@ -39,7 +39,7 @@ export const DataProvider = ({ children }) => {
             setUser({})
             setTasks([])
             console.log(e)
-            console.log('Please Login to Continue')
+            console.log('Please Login to Continue2')
             router.push('/login')
         }
     }

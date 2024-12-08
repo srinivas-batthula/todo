@@ -164,7 +164,7 @@ export default function Login() {
                     {error.password && <div className="invalid-feedback">{error.password}</div>}
                 </div>
 
-                <button type="button" onClick={handleSubmit} className="btn btn-primary px-4 py-2 fs-6 fw-bold" style={{display:'flex', justifyContent:'center', justifyItems:'center', alignContent:'center', alignItems:'center', margin:'auto'}} disabled={loading}>
+                <button type="button" onClick={handleSubmit} className="btn btn-primary px-4 py-2 fs-6 fw-bold" style={{ height:'2rem' ,display:'flex', justifyContent:'center', justifyItems:'center', alignContent:'center', alignItems:'center', margin:'auto'}} disabled={loading}>
                     {loading ? (isRegistering ? 'Registering...' : 'Logging in...') : (isRegistering ? 'Register' : 'Login')}
                 </button>
 

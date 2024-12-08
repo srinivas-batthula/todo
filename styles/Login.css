@@ -15,6 +15,11 @@
     font-size: 1.1rem;
 }
 
+.form-control{
+    height: 2rem;
+}
+
+
 
 
 
@@ -38,12 +43,12 @@
 
 @media screen and (min-width:550px) and (max-width:660px){
     .mx-auto{
-        width: 80%;
+        width: 85%;
     }
 }
 
-@media screen and (min-width:400px) and (max-width:550px){
+@media screen and (max-width:550px){
     .mx-auto{
-        width: 90%;
+        width: 95%;
     }
 }
