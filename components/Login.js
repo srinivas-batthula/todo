@@ -65,6 +65,8 @@ export default function Login() {
             setLoading(true);
             setErr(null);
 
+            console.log(formData)
+
             try {
                 const endpoint = isRegistering ? 'https://todo-backend-1-4u6w.onrender.com/api/auth/signUp' : 'https://todo-backend-1-4u6w.onrender.com/api/auth/signIn'; // Choose API based on mode
                 const response = await fetch(endpoint, {
