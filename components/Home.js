@@ -86,7 +86,7 @@ export default function Home() {
                         {/* Floating Button */}
                         <Link href={{pathname:'/task_form', query:{ task_id:"", task:"", New:'true' }}}>
                             <div className={styles.floating_btn}>
-                                <i className="fa-solid fa-plus" style={{color:"blue", fontSize:'1.9rem'}}></i>
+                                <i className="fa-solid fa-plus" style={{color:"blue", fontSize:'2.15rem'}}></i>
                             </div>
                         </Link>
                     </div>
