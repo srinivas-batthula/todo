@@ -6,7 +6,7 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     {/* Custom fonts, meta tags, or external scripts go here */}
-                    <link rel="manifest" href="https://srinivas-batthula.github.io/todo/manifest.json" />
+                    {/* <link rel="manifest" href="/manifest.json" /> */}
                     <meta name="theme-color" content="#000000" />
                     <meta name='title' content='Todo_App' />
                     <meta name='author' content='Srinivas Batthula' />
@@ -23,24 +23,7 @@ class MyDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
-                    {/* Register the service worker */}
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                    navigator.serviceWorker.register('https://srinivas-batthula.github.io/todo/service-worker.js')
-                    .then(function(registration) {
-                        console.log('ServiceWorker registration successful');
-                    })
-                    .catch(function(error) {
-                        console.log('ServiceWorker registration failed');
-                    });
-                });
-                }
-            `,
-                        }}
-                    />
+                    
                 </body>
             </Html>
         );

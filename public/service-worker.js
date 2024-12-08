@@ -3,6 +3,7 @@ const URLS_TO_CACHE = [
     '/',
     '/icon.jpg',
     '/home.png',
+    '/public',
     '/_next/static/*',  // This is to cache Next.js static files
     '/_next/image/*',   // Cache images loaded by Next.js image optimization
 ];
