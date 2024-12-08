@@ -73,6 +73,9 @@ export default function Login() {
                     method: 'POST',
                     credentials: 'include',       //To include all cookies (jwt-tokens)......
                     body: JSON.stringify(formData),
+                    headers:{
+                        'Content-Type':'application/json'
+                    },
                     // mode:'cors',
                 });
 
