@@ -33,7 +33,7 @@ export default function Profile() {
         }
     
         try {
-            let r = await fetch(`http://localhost:8080/api/db/users?userId=${user.user_id}`, {
+            let r = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/users?userId=${user.user_id}`, {
                 method: 'PATCH',
                 credentials:'include',
                 body: JSON.stringify({'subscription':subscription}),
@@ -104,7 +104,7 @@ export default function Profile() {
 
     async function handleLogout(){
         try{
-            let res = await fetch('http://localhost:8080/api/auth/signOut', {
+            let res = await fetch('https://todo-backend-1-4u6w.onrender.com/api/auth/signOut', {
                 method:'GET',
                 credentials:'include'
             })

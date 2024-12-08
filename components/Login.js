@@ -66,7 +66,7 @@ export default function Login() {
             setErr(null);
 
             try {
-                const endpoint = isRegistering ? 'http://localhost:8080/api/auth/signUp' : 'http://localhost:8080/api/auth/signIn'; // Choose API based on mode
+                const endpoint = isRegistering ? 'https://todo-backend-1-4u6w.onrender.com/api/auth/signUp' : 'https://todo-backend-1-4u6w.onrender.com/api/auth/signIn'; // Choose API based on mode
                 const response = await fetch(endpoint, {
                     method: 'POST',
                     headers: {
@@ -101,7 +101,7 @@ export default function Login() {
 
         try {
             // Send the user to your backend to start the Google OAuth flow
-            window.location.href = "http://localhost:8080/api/auth/google1"; // Redirect to backend route
+            window.location.href = "https://todo-backend-1-4u6w.onrender.com/api/auth/google1"; // Redirect to backend route
         }
         catch (error) {
             setErr('Error: ' + error.message)

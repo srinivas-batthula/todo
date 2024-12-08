@@ -25,7 +25,7 @@ export default function Home() {
 
     async function handleComplete(task_id) {
         try {
-            let res = await fetch(`http://localhost:8080/api/db/tasks?id=${task_id}`, {
+            let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks?id=${task_id}`, {
                 method: 'PATCH',
                 credentials: 'include',      //To include all cookies (jwt-tokens)......
                 headers: {
@@ -46,7 +46,7 @@ export default function Home() {
 
     async function handleDelete(task_id) {
         try {
-            let res = await fetch(`http://localhost:8080/api/db/tasks?id=${task_id}`, {
+            let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks?id=${task_id}`, {
                 method: 'DELETE',
                 credentials: 'include'      //To include all cookies (jwt-tokens)......
             })

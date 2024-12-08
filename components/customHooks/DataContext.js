@@ -11,7 +11,7 @@ export const DataProvider = ({ children }) => {
     const router = useRouter()
     const FetchData = async() => {
         try {
-            let res = await fetch('http://localhost:8080/api/db/tasks', {
+            let res = await fetch('https://todo-backend-1-4u6w.onrender.com/api/db/tasks', {
                 method: 'GET',
                 credentials: 'include'      //To include all cookies (jwt-tokens)......
                 // mode:'cors'
