@@ -69,9 +69,6 @@ export default function Login() {
                 const endpoint = isRegistering ? 'https://todo-backend-1-4u6w.onrender.com/api/auth/signUp' : 'https://todo-backend-1-4u6w.onrender.com/api/auth/signIn'; // Choose API based on mode
                 const response = await fetch(endpoint, {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
                     credentials: 'include',       //To include all cookies (jwt-tokens)......
                     body: JSON.stringify(formData),
                 });

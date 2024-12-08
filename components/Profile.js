@@ -36,10 +36,7 @@ export default function Profile() {
             let r = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/users?userId=${user.user_id}`, {
                 method: 'PATCH',
                 credentials:'include',
-                body: JSON.stringify({'subscription':subscription}),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                body: JSON.stringify({'subscription':subscription})
             })
             r = await r.json()
             if(r.status==='success'){
