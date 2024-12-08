@@ -88,7 +88,7 @@
 .txt{
     text-align: center;
     letter-spacing: 0.1rem;
-    padding-top: 18rem;
+    padding-top: 20rem;
     position: fixed;
     padding-left: 40%;
     color: black;
@@ -145,5 +145,6 @@
     } */
     .txt{
         padding-left: 30%;
+        padding-top: 22rem;
     }
 }
