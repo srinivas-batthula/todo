@@ -143,7 +143,11 @@ export default function FormP() {
                         (success!=="")?success:""
                     }
                 </div>
-                <div className={styles.head}>Create a New Task : </div>
+                <div className={styles.head}>
+                    {
+                        (New==='true') ? "Create a Task : " : "Update a Task : "
+                    }
+                </div>
                 <Form>
                     <Row className="mb-8">
                         <Form.Group as={Col} controlId="formGridEmail">
