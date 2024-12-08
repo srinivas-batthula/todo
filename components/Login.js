@@ -114,7 +114,7 @@ export default function Login() {
         <div className={styles.main}>
         <div className="container">
             <h2 className="text-center mb-24 fs-1" style={{marginTop:'4rem'}}>{isRegistering ? 'Register' : 'Login'}</h2>
-            <form onSubmit={handleSubmit} className="mx-auto">
+            <form className="mx-auto">
                 {err && <div className="alert alert-danger">{err}</div>}
                 {successMessage && <div className="alert alert-success">{successMessage}</div>}
 
@@ -161,7 +161,7 @@ export default function Login() {
                     {error.password && <div className="invalid-feedback">{error.password}</div>}
                 </div>
 
-                <button type="submit" className="btn btn-primary px-4 py-2 fs-6 fw-bold" style={{display:'flex', justifyContent:'center', justifyItems:'center', alignContent:'center', alignItems:'center', margin:'auto'}} disabled={loading}>
+                <button type="button" onClick={handleSubmit} className="btn btn-primary px-4 py-2 fs-6 fw-bold" style={{display:'flex', justifyContent:'center', justifyItems:'center', alignContent:'center', alignItems:'center', margin:'auto'}} disabled={loading}>
                     {loading ? (isRegistering ? 'Registering...' : 'Logging in...') : (isRegistering ? 'Register' : 'Login')}
                 </button>
 
