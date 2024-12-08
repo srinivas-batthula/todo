@@ -1,8 +1,8 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState } from 'react'
 import { useRouter } from 'next/router'
 
 
-export const DataContext = createContext();
+export const DataContext = createContext()
 
 export const DataProvider = ({ children }) => {
     const [user, setUser] = useState({})
