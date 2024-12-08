@@ -4,16 +4,17 @@
     "description": "An App by ~Srinivas.",
     "start_url": "/",
     "display": "standalone",
+    "scope": "/",
     "background_color": "#ffffff",
     "theme_color": "#00796b",
     "icons": [
         {
-            "src": "https://srinivas-batthula.github.io/todo//icon.jpg",
+            "src": "https://srinivas-batthula.github.io/todo/icon.jpg",
             "sizes": "192x192",
             "type": "image/jpg"
         },
         {
-            "src": "https://srinivas-batthula.github.io/todo//icon.jpg",
+            "src": "https://srinivas-batthula.github.io/todo/icon.jpg",
             "sizes": "512x512",
             "type": "image/jpg"
         }

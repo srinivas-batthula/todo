@@ -6,6 +6,8 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     {/* Custom fonts, meta tags, or external scripts go here */}
+                    <link rel="manifest" href="https://srinivas-batthula.github.io/todo/manifest.json" />
+                    <meta name="theme-color" content="#000000" />
                     <meta name='title' content='Todo_App' />
                     <meta name='author' content='Srinivas Batthula' />
                     <meta name="description" content="Srinivas Batthula Todo Fullstack" />
