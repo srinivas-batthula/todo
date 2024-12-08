@@ -56,6 +56,9 @@ export default function FormP() {
                     let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks`, {
                         method: 'POST',
                         credentials: 'include',      //To include all cookies (jwt-tokens)......
+                        headers:{
+                            'Content-Type':'application/json'
+                        },
                         body: JSON.stringify(body)
                     })
                     res = await res.json()
@@ -86,6 +89,9 @@ export default function FormP() {
                     let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks?id=${task_id}`, {
                         method: 'PATCH',
                         credentials: 'include',      //To include all cookies (jwt-tokens)......
+                        headers:{
+                            'Content-Type':'application/json'
+                        },
                         body: JSON.stringify(body)
                     })
                     res = await res.json()

@@ -36,6 +36,9 @@ export default function Profile() {
             let r = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/users?userId=${user.user_id}`, {
                 method: 'PATCH',
                 credentials:'include',
+                headers:{
+                    'Content-Type':'application/json'
+                },
                 body: JSON.stringify({'subscription':subscription})
             })
             r = await r.json()
@@ -103,7 +106,10 @@ export default function Profile() {
         try{
             let res = await fetch('https://todo-backend-1-4u6w.onrender.com/api/auth/signOut', {
                 method:'GET',
-                credentials:'include'
+                credentials:'include',
+                headers:{
+                    'Content-Type':'application/json'
+                },
             })
             res = await res.json()
             if(res.status==='success'){

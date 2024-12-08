@@ -13,7 +13,10 @@ export const DataProvider = ({ children }) => {
         try {
             let res = await fetch('https://todo-backend-1-4u6w.onrender.com/api/db/tasks', {
                 method: 'GET',
-                credentials: 'include'      //To include all cookies (jwt-tokens)......
+                credentials: 'include',           //To include all cookies (jwt-tokens)......
+                headers:{
+                    'Content-Type':'application/json'
+                },
                 // mode:'cors'
             })
             res = await res.json()

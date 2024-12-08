@@ -28,6 +28,9 @@ export default function Home() {
             let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks?id=${task_id}`, {
                 method: 'PATCH',
                 credentials: 'include',      //To include all cookies (jwt-tokens)......
+                headers:{
+                    'Content-Type':'application/json'
+                },
                 body: JSON.stringify({ 'status': 'completed' })
             })
             res = await res.json()
@@ -45,7 +48,10 @@ export default function Home() {
         try {
             let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks?id=${task_id}`, {
                 method: 'DELETE',
-                credentials: 'include'      //To include all cookies (jwt-tokens)......
+                credentials: 'include',      //To include all cookies (jwt-tokens)......
+                headers:{
+                    'Content-Type':'application/json'
+                },
             })
             res = await res.json()
             if(res.status==='success'){
