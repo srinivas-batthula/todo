@@ -1,9 +1,9 @@
 import React, {useState, useEffect, useContext} from "react"
+import Link from "next/link"
 
 import { DataContext } from "./customHooks/DataContext"
 
 import styles from '../styles/Analytics.module.css'
-import Card from './Card'
 
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
@@ -13,7 +13,7 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 
 
 export default function Data(){
-    const {tasks, FetchData} = useContext(DataContext)
+    const {tasks} = useContext(DataContext)
     const [task, setTask] = useState({'completed':0, 'pending':0})
     const [category, setCategory] = useState({'work':0, 'personal':0, 'other':0})
 
@@ -47,47 +47,6 @@ export default function Data(){
     }
 
     useEffect(() => { handleData() }, [tasks])     //Fetch tasks on Refresh
-
-    async function handleComplete(task_id) {
-        try {
-            let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks?id=${task_id}`, {
-                method: 'PATCH',
-                credentials: 'include',      //To include all cookies (jwt-tokens)......
-                headers:{
-                    'Content-Type':'application/json'
-                },
-                body: JSON.stringify({ 'status': 'completed' })
-            })
-            res = await res.json()
-            if(res.status==='success'){
-                console.log("Task Modified...")
-            }
-            FetchData()      //Gets all tasks & Set's New state in Home
-        }
-        catch (e) {
-            console.log(e)
-        }
-    }
-
-    async function handleDelete(task_id) {
-        try {
-            let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks?id=${task_id}`, {
-                method: 'DELETE',
-                credentials: 'include',      //To include all cookies (jwt-tokens)......
-                headers:{
-                    'Content-Type':'application/json'
-                },
-            })
-            res = await res.json()
-            if(res.status==='success'){
-                console.log("Task Deleted...")
-            }
-            FetchData()      //Gets all tasks & Set's New state in Home
-        }
-        catch (e) {
-            console.log(e)
-        }
-    }
 
 
     const data = {
@@ -140,19 +99,11 @@ export default function Data(){
                     }
                 </div>
 
-                <div className={styles.task}>
-                    <div style={{fontSize:'1.2rem', fontWeight:'600', textAlign:'center', marginBottom:'1rem'}}>Your Completed Tasks : </div>
-                        {
-                            (!tasks || tasks.length===0 || task.completed===0) ? <div style={{textAlign:'center', fontSize:'1rem'}}>No Completed Tasks to display</div> : (
-                                tasks.map((item, key) => {
-                                    if(item.status==='completed'){
-                                        return (
-                                            <Card key={key} task_id={item._id} status={item.status} category={item.category} priority={item.priority} task={item.task} handleComplete={handleComplete} handleDelete={handleDelete} />
-                                        )
-                                    }
-                                })
-                            )
-                        }
+                <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignContent:'center', alignItems:'center', textAlign:'center', marginTop:'2rem', marginBottom:'6.5rem'}}>
+                    <div style={{fontSize:'1.3rem', fontWeight:'600', textAlign:'center', marginBottom:'0.6rem'}}>Your Completed Tasks : </div>
+                    {
+                        (!tasks || tasks.length===0 || task.completed===0) ? "" : ( <Link href='/completed' style={{fontSize:'1.2rem'}}>View Completed Tasks</Link> )
+                    }
                 </div>
 
             </div>
