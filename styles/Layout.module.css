@@ -54,8 +54,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 48em;
-    height: 48em;
+    width: 1rem;
+    height: 1rem;
     background-image: radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
     radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
     radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
@@ -80,20 +80,20 @@
 @keyframes bounce {
     0%,
     100% {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
     }
     50% {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
 }
 @keyframes blast {
     0%,
     40% {
-        font-size: 0.6rem;
+        font-size: 0.75rem;
     }
     70% {
         opacity: 1;
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
     100% {
         font-size: 1rem;
