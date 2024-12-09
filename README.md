@@ -16,9 +16,18 @@ Welcome to my TaskManager project, designed using MERN-stack.
 
 ## Live Demo
 
-Insert gif or link to demo
-
 https://srinivas-batthula.github.io/todo
+
+
+## Source Codes
+
+## --> Frontend:
+https://github.com/srinivas-batthula/todo
+
+## --> Backend:
+https://github.com/srinivas-batthula/todo_backend
+
+
 ## API Reference
 
 #### Get Home page
