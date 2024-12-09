@@ -2,7 +2,7 @@
     "name": "Task Manager",
     "short_name": "Task Manager",
     "description": "An App by ~Srinivas.",
-    "start_url": "/",
+    "start_url": "/todo",
     "display": "standalone",
     "scope": "/",
     "background_color": "#ffffff",
