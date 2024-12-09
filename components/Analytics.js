@@ -13,7 +13,7 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 
 
 export default function Data(){
-    const {tasks} = useContext(DataContext)
+    const {tasks, FetchData} = useContext(DataContext)
     const [task, setTask] = useState({'completed':0, 'pending':0})
     const [category, setCategory] = useState({'work':0, 'personal':0, 'other':0})
 
@@ -140,7 +140,7 @@ export default function Data(){
                     }
                 </div>
 
-                <div className={styles.task} style={{marginTop:'2rem'}}>
+                <div className={styles.task}>
                     <div style={{fontSize:'1.2rem', fontWeight:'600', textAlign:'center', marginBottom:'1rem'}}>Your Completed Tasks : </div>
                         {
                             (!tasks || tasks.length===0 || task.completed===0) ? <div style={{textAlign:'center', fontSize:'1rem'}}>No Completed Tasks to display</div> : (
