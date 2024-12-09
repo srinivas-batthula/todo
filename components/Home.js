@@ -70,7 +70,7 @@ export default function Home() {
             <div className={styles.main}>
                 <div className={styles.card}>
                     <div className={styles.space} style={{position:'fixed'}}>Task Manager</div>
-                    <div className={styles.content} style={{marginTop:(!tasks || tasks.length===0 || completed===0) ? '1.6rem':'5rem'}}>
+                    <div className={styles.content} style={{marginTop:(!tasks || tasks.length===0 || completed===true) ? '1.6rem':'5rem'}}>
                         {
                             (!tasks || tasks.length===0 || completed===true) ? <NoData opacity={0.65} txt={"No Tasks to display"} /> : (
                                 tasks.map((item, key) => {
