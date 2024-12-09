@@ -101,9 +101,7 @@ export default function Data(){
 
                 <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignContent:'center', alignItems:'center', textAlign:'center', marginTop:'2rem', marginBottom:'6.5rem'}}>
                     <div style={{fontSize:'1.3rem', fontWeight:'600', textAlign:'center', marginBottom:'0.6rem'}}>Your Completed Tasks : </div>
-                    {
-                        (!tasks || tasks.length===0 || task.completed===0) ? "" : ( <Link href='/completed' style={{fontSize:'1.2rem'}}>View Completed Tasks</Link> )
-                    }
+                    <Link href='/completed' style={{fontSize:'1.2rem'}}>View Completed Tasks</Link>
                 </div>
 
             </div>
