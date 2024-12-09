@@ -3,6 +3,7 @@ import React, {useState, useEffect, useContext} from "react"
 import { DataContext } from "./customHooks/DataContext"
 
 import styles from '../styles/Analytics.module.css'
+import Card from './Card'
 
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
@@ -101,7 +102,7 @@ export default function Data(){
                 <div className={styles.task} style={{marginTop:'2rem'}}>
                     <div style={{fontSize:'1.2rem', fontWeight:'600', textAlign:'center', marginBottom:'1rem'}}>Your Completed Tasks : </div>
                         {
-                            (!tasks || tasks.length===0) ? <div style={{textAlign:'center', fontSize:'1rem'}}>No Completed Tasks to display</div> : (
+                            (!tasks || tasks.length===0 || task.completed===0) ? <div style={{textAlign:'center', fontSize:'1rem'}}>No Completed Tasks to display</div> : (
                                 tasks.map((item, key) => {
                                     if(item.status==='completed'){
                                         return (

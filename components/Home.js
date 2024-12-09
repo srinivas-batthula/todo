@@ -21,7 +21,7 @@ function NoData({opacity, txt}){
 }
 
 export default function Home() {
-    const { tasks, FetchData } = useContext(DataContext)
+    const { tasks, completed, FetchData } = useContext(DataContext)
 
     async function handleComplete(task_id) {
         try {
@@ -72,7 +72,7 @@ export default function Home() {
                     <div className={styles.space} style={{position:'fixed'}}>Task Manager</div>
                     <div className={styles.content} style={{marginTop:(tasks.length===0) ? '1.6rem':'5rem'}}>
                         {
-                            (!tasks || tasks.length===0) ? <NoData opacity={0.65} txt={"No Tasks to display"} /> : (
+                            (!tasks || tasks.length===0 || completed===0) ? <NoData opacity={0.65} txt={"No Tasks to display"} /> : (
                                 tasks.map((item, key) => {
                                     if(item.status!=='completed'){
                                         return (
