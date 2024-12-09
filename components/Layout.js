@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
                     <div >
                         <Login />
                     </div>
-                ) : (load===true) ? (<div >
+                ) : (load===true) ? (<div style={{display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', justifyItems:'center', margin:'auto'}}>
                     <span className={styles.loader}></span>
                 </div>) : ( <div>
                         <main style={{

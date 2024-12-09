@@ -43,8 +43,8 @@
 }
 
 .loader {
-    width: 60px;
-    height: 60px;
+    width: 4rem;
+    height: 4rem;
     position: relative;
 }
 .loader::before,
@@ -56,23 +56,23 @@
     transform: translate(-50%, -50%);
     width: 48em;
     height: 48em;
-    background-image: radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0);
+    background-image: radial-gradient(circle 1.5rem, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 1.5rem, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 1.5rem, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 1.5rem, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 1.5rem, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 1.5rem, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 1.5rem, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 1.5rem, #ff7d7d 100%, transparent 0);
     background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em, 13em -13em,
     -13em -13em, 13em 13em, -13em 13em;
     background-repeat: no-repeat;
-    font-size: 20px;
+    font-size: 2.5rem;
     border-radius: 50%;
     animation: blast 1s ease-in infinite;
 }
 .loader::after {
-    font-size: 25px;
+    font-size: 2.5rem;
     background: #ff7d7d;
     animation: bounce 1s ease-in infinite;
 }
@@ -80,23 +80,23 @@
 @keyframes bounce {
     0%,
     100% {
-        font-size: 22px;
+        font-size: 2.8rem;
     }
     50% {
-        font-size: 30px;
+        font-size: 3.1rem;
     }
 }
 @keyframes blast {
     0%,
     40% {
-        font-size: 20px;
+        font-size: 2.8rem;
     }
     70% {
         opacity: 1;
-        font-size: 40px;
+        font-size: 3.3rem;
     }
     100% {
-        font-size: 55px;
+        font-size: 3.9rem;
         opacity: 0;
     }
 }
