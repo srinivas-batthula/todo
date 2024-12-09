@@ -20,6 +20,13 @@
     width: 65%;
 }
 
+.task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
 .box{
     border-radius: 5%;
     margin-right: 0.8rem;
@@ -48,7 +55,6 @@
     align-items: center;
     align-content: center;
     margin-top: 2rem;
-    margin-bottom: 6rem;
 }
 
 

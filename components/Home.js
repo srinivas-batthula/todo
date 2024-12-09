@@ -74,9 +74,11 @@ export default function Home() {
                         {
                             (!tasks || tasks.length===0) ? <NoData opacity={0.65} txt={"No Tasks to display"} /> : (
                                 tasks.map((item, key) => {
-                                    return (
-                                        <Card key={key} task_id={item._id} status={item.status} category={item.category} priority={item.priority} task={item.task} handleComplete={handleComplete} handleDelete={handleDelete} />
-                                    )
+                                    if(item.status!=='completed'){
+                                        return (
+                                            <Card key={key} task_id={item._id} status={item.status} category={item.category} priority={item.priority} task={item.task} handleComplete={handleComplete} handleDelete={handleDelete} />
+                                        )
+                                    }
                                 })
                             )
                         }

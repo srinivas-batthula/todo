@@ -50,10 +50,10 @@
 .loader::before,
 .loader::after {
     content: "";
-    /* position: absolute;
+    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     width: 48em;
     height: 48em;
     background-image: radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),

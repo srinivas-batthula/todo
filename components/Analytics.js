@@ -97,6 +97,22 @@ export default function Data(){
                         (category.other===0 && category.personal===0 && category.work===0) ? <div style={{fontSize:'1.3rem', letterSpacing:'0.06rem'}}>No stats to display</div> : <Line data={data} options={options} />
                     }
                 </div>
+
+                <div className={styles.task} style={{marginTop:'2rem'}}>
+                    <div style={{fontSize:'1.2rem', fontWeight:'600', textAlign:'center', marginBottom:'1rem'}}>Your Completed Tasks : </div>
+                        {
+                            (!tasks || tasks.length===0) ? <div style={{textAlign:'center', fontSize:'1rem'}}>No Completed Tasks to display</div> : (
+                                tasks.map((item, key) => {
+                                    if(item.status==='completed'){
+                                        return (
+                                            <Card key={key} task_id={item._id} status={item.status} category={item.category} priority={item.priority} task={item.task} handleComplete={handleComplete} handleDelete={handleDelete} />
+                                        )
+                                    }
+                                })
+                            )
+                        }
+                </div>
+
             </div>
         </>
     )
