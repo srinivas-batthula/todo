@@ -6,14 +6,14 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     {/* <link rel="manifest" href="/manifest.json" /> */}
-                    <link rel='manifest' href='/manifest.json' />
+                    <link rel='manifest' href='https://srinivas-batthula.github.io/todo/manifest.json' />
                     {/* Custom fonts, meta tags, or external scripts go here */}
                     <meta name="theme-color" content="#000000" />
                     <meta name='title' content='Todo_App' />
                     <meta name='author' content='Srinivas Batthula' />
                     <meta name="description" content="Srinivas Batthula Todo Fullstack" />
                     {/*  Icon...  */}
-                    <link rel="icon" href="https://srinivas-batthula.github.io/todo//icon.jpg" type="image/x-icon" />
+                    <link rel="icon" href="https://srinivas-batthula.github.io/todo/icon.jpg" type="image/x-icon" />
 
                     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet" />
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
