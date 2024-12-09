@@ -4,6 +4,9 @@ const nextConfig = {
     basePath:'/todo',
     assetPrefix:'/todo',
     trailingSlash: true,
+    
+    swcMinify: true,
+    reactStrictMode: true,
 }
 
 export default nextConfig;

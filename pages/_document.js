@@ -5,8 +5,9 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    {/* Custom fonts, meta tags, or external scripts go here */}
                     {/* <link rel="manifest" href="/manifest.json" /> */}
+                    <link rel='manifest' href='/manifest.json' />
+                    {/* Custom fonts, meta tags, or external scripts go here */}
                     <meta name="theme-color" content="#000000" />
                     <meta name='title' content='Todo_App' />
                     <meta name='author' content='Srinivas Batthula' />

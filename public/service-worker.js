@@ -56,7 +56,7 @@ self.addEventListener('push', (event)=>{
 self.addEventListener('notificationclick', (event)=>{
     event.notification.close();
     event.waitUntil(
-        clients.openWindow('https://srinivas3888.github.io/pwa2/') // Replace with your desired URL
+        clients.openWindow('https://srinivas-batthula.github.io/todo/') // Replace with your desired URL
     );
 });
 
