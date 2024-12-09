@@ -43,8 +43,8 @@
 }
 
 .loader {
-    width: 1rem;
-    height: 1rem;
+    width: 48px;
+    height: 48px;
     position: relative;
 }
 .loader::before,
@@ -54,25 +54,25 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 1rem;
-    height: 1rem;
-    background-image: radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0),
-    radial-gradient(circle 0.5rem, #ff7d7d 100%, transparent 0);
+    width: 48em;
+    height: 48em;
+    background-image: radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0),
+    radial-gradient(circle 10px, #ff7d7d 100%, transparent 0);
     background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em, 13em -13em,
     -13em -13em, 13em 13em, -13em 13em;
     background-repeat: no-repeat;
-    font-size: 0.5rem;
+    font-size: 0.5px;
     border-radius: 50%;
     animation: blast 1s ease-in infinite;
 }
 .loader::after {
-    font-size: 0.65rem;
+    font-size: 1px;
     background: #ff7d7d;
     animation: bounce 1s ease-in infinite;
 }
@@ -80,30 +80,26 @@
 @keyframes bounce {
     0%,
     100% {
-        font-size: 0.65rem;
+        font-size: 0.75px;
     }
     50% {
-        font-size: 0.85rem;
+        font-size: 1.5px;
     }
 }
 @keyframes blast {
     0%,
     40% {
-        font-size: 0.75rem;
+        font-size: 0.5px;
     }
     70% {
         opacity: 1;
-        font-size: 1rem;
+        font-size: 4px;
     }
     100% {
-        font-size: 1rem;
+        font-size: 6px;
         opacity: 0;
     }
 }
-
-
-
-
 
 @media screen and (max-width: 900px) and (min-width: 650px) {
     .main2 {
