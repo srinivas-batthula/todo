@@ -11,10 +11,15 @@ import { DataContext } from './customHooks/DataContext'
 
 const Layout = ({ children }) => {
     const [path, setPath] = useState('')
+    const [load, setLoad] = useState(false)
     const {theme} = useContext(ThemeContext)
     const { FetchData } = useContext(DataContext)
 
-    useEffect(() => { FetchData() }, [])     //Fetch Tasks on Refresh
+    useEffect(async() => {
+        setLoad(true)
+        await FetchData()
+        setLoad(false)
+    }, [])     //Fetch Tasks on Refresh
 
     const router = useRouter()
     // Get the current page path (this will update whenever the route changes)
@@ -32,8 +37,9 @@ const Layout = ({ children }) => {
                     <div >
                         <Login />
                     </div>
-                ) : (
-                    <div>
+                ) : (load===true) ? (<div style={{backfaceVisibility:'hidden'}}>
+                    <span className={styles.loader}></span>
+                </div>) : ( <div>
                         <main style={{
                             backgroundColor: theme,
                             color: theme === 'white' ? 'rgb(39, 39, 39)' : 'white',

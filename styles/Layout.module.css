@@ -1,4 +1,4 @@
-.main{
+.main {
     scrollbar-width: thin;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -6,12 +6,12 @@
     transition-property: all;
 }
 
-.main3{
+.main3 {
     display: block;
     position: relative;
 }
 
-.main2{
+.main2 {
     scrollbar-width: none;
     scroll-behavior: smooth;
     display: flex;
@@ -26,7 +26,7 @@
     gap: 30%;
 }
 
-.child{
+.child {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -34,35 +34,89 @@
     transition-duration: 0.15s;
     transition-property: all;
 }
-.child1:active{
+.child1:active {
     text-shadow: 0 0 0.25rem rgb(0, 0, 0);
 }
-.child2:active{
+.child2:active {
     text-shadow: 0 0 0.15rem rgb(0, 132, 255);
     cursor: pointer;
 }
 
+.loader {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+.loader::before,
+.loader::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 48em;
+    height: 48em;
+    background-image: radial-gradient(circle 10px, #fff 100%, transparent 0),
+    radial-gradient(circle 10px, #fff 100%, transparent 0),
+    radial-gradient(circle 10px, #fff 100%, transparent 0),
+    radial-gradient(circle 10px, #fff 100%, transparent 0),
+    radial-gradient(circle 10px, #fff 100%, transparent 0),
+    radial-gradient(circle 10px, #fff 100%, transparent 0),
+    radial-gradient(circle 10px, #fff 100%, transparent 0),
+    radial-gradient(circle 10px, #fff 100%, transparent 0);
+    background-position: 0em -18em, 0em 18em, 18em 0em, -18em 0em, 13em -13em,
+    -13em -13em, 13em 13em, -13em 13em;
+    background-repeat: no-repeat;
+    font-size: 0.5px;
+    border-radius: 50%;
+    animation: blast 1s ease-in infinite;
+}
+.loader::after {
+    font-size: 1px;
+    background: #fff;
+    animation: bounce 1s ease-in infinite;
+}
 
-
-
-
-
-@media screen and (max-width:900px) and (min-width:650px) {
-    .main2{
-        gap: 23%;
+@keyframes bounce {
+    0%,
+    100% {
+        font-size: 0.75px;
+    }
+    50% {
+        font-size: 1.5px;
+    }
+}
+@keyframes blast {
+    0%,
+    40% {
+        font-size: 0.5px;
+    }
+    70% {
+        opacity: 1;
+        font-size: 4px;
+    }
+    100% {
+        font-size: 6px;
+        opacity: 0;
     }
 }
 
-@media screen and (max-width:660px) and (min-width:500px) {
-    .main2{
-        gap: 17%;
-        margin-top: 0.2rem;
+@media screen and (max-width: 900px) and (min-width: 650px) {
+    .main2 {
+    gap: 23%;
     }
 }
 
-@media screen and (max-width:500px) {
-    .main2{
-        gap: 12%;
-        margin-top: 0.3rem;
+@media screen and (max-width: 660px) and (min-width: 500px) {
+    .main2 {
+    gap: 17%;
+    margin-top: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main2 {
+    gap: 12%;
+    margin-top: 0.3rem;
     }
 }
