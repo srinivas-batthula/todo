@@ -48,6 +48,47 @@ export default function Data(){
 
     useEffect(() => { handleData() }, [tasks])     //Fetch tasks on Refresh
 
+    async function handleComplete(task_id) {
+        try {
+            let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks?id=${task_id}`, {
+                method: 'PATCH',
+                credentials: 'include',      //To include all cookies (jwt-tokens)......
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                body: JSON.stringify({ 'status': 'completed' })
+            })
+            res = await res.json()
+            if(res.status==='success'){
+                console.log("Task Modified...")
+            }
+            FetchData()      //Gets all tasks & Set's New state in Home
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
+
+    async function handleDelete(task_id) {
+        try {
+            let res = await fetch(`https://todo-backend-1-4u6w.onrender.com/api/db/tasks?id=${task_id}`, {
+                method: 'DELETE',
+                credentials: 'include',      //To include all cookies (jwt-tokens)......
+                headers:{
+                    'Content-Type':'application/json'
+                },
+            })
+            res = await res.json()
+            if(res.status==='success'){
+                console.log("Task Deleted...")
+            }
+            FetchData()      //Gets all tasks & Set's New state in Home
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
+
 
     const data = {
         labels: ['work', 'personal', 'other'],
