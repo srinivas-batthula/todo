@@ -54,7 +54,7 @@ export default function Complete(){
             <div style={{marginBottom:'5rem', display:'flex', flexDirection:'column', justifyContent:'center', alignContent:'center', alignItems:'center', textAlign:'center'}}>
                 <div style={{fontSize:'1.3rem', fontWeight:'600', textAlign:'center', marginBottom:'0.8rem', marginTop:'0.65rem'}}>Your Completed Tasks : </div>
                 {
-                    (!tasks || tasks.length===0 || completed===0) ? <div style={{textAlign:'center', fontSize:'1rem'}}>No Completed Tasks to display</div> : (
+                    (!tasks || tasks.length===0 || completed!==true) ? <div style={{textAlign:'center', fontSize:'1rem'}}>No Completed Tasks to display</div> : (
                         tasks.map((item, key) => {
                             if(item.status==='completed'){
                                 return (
