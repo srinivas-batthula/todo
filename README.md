@@ -41,6 +41,8 @@ https://github.com/srinivas-batthula/todo_backend
 ```http
   GET /analytics
   GET /profile
+  GET /login
+  GET /completed
 ```
 
 
