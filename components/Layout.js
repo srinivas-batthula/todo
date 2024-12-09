@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
                     <div >
                         <Login />
                     </div>
-                ) : (load===true) ? (<div style={{backfaceVisibility:'hidden'}}>
+                ) : (load===true) ? (<div >
                     <span className={styles.loader}></span>
                 </div>) : ( <div>
                         <main style={{
