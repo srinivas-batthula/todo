@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react"
 import { useRouter } from 'next/router'
+import Link from "next/link"
 import Form from 'react-bootstrap/Form'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -346,6 +347,7 @@ export default function FormP() {
                     }
                 </button>
                 </div>
+                <Link href='/profile' style={{marginBottom:'6.5rem'}}>Please Allow Notifications</Link>
             </div>
         </>
     )
