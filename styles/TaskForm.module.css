@@ -5,6 +5,7 @@
     align-items: center;
     align-content: center;
     justify-items: center;
+    flex-direction: column;
     background-image: url('../public/form.png');
     background-size: cover;
     background-position: center;
