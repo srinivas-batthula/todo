@@ -1,9 +1,11 @@
 const CACHE_NAME = 'todo-v1';
 const URLS_TO_CACHE = [
     '/',
-    '/icon.jpg',
-    '/home.png',
+    '/todo',
     '/public',
+    '/icon.jpg',
+    '/icon1.png',
+    '/home.png',
     '/_next/static/*',  // This is to cache Next.js static files
     '/_next/image/*',   // Cache images loaded by Next.js image optimization
 ];
@@ -45,7 +47,18 @@ self.addEventListener('push', (event)=>{
     const options = {
         body: data.body,
         icon: './icon.jpg', // Replace with your icon file path if available
-        badge: './icon.jpg' // Replace with your badge file path if available
+        badge: './icon1.png',
+        vibrate: [150, 80, 150],
+        actions: [
+            {
+                action:'open_home',
+                title:'Open App'
+            },
+            {
+                action:'open_profile',
+                title:'Profile'
+            },
+        ]
     };
 
     event.waitUntil(
@@ -54,9 +67,27 @@ self.addEventListener('push', (event)=>{
 });
 
 self.addEventListener('notificationclick', (event)=>{
-    event.notification.close();
-    event.waitUntil(
-        clients.openWindow('https://srinivas-batthula.github.io/todo/') // Replace with your desired URL
-    );
-});
+    const action = event.action
+
+    if(action === 'open_profile'){
+        event.notification.close()
+        event.waitUntil(
+            clients.openWindow('https://srinivas-batthula.github.io/todo/profile') // Replace with your desired URL
+        )
+    }
+
+    else if(action === 'open_home'){
+        event.notification.close()
+        event.waitUntil(
+            clients.openWindow('https://srinivas-batthula.github.io/todo/') // Replace with your desired URL
+        )
+    }
+
+    else{
+        event.notification.close()
+        event.waitUntil(
+            clients.openWindow('https://srinivas-batthula.github.io/todo/') // Replace with your desired URL
+        )
+    }
+})
 

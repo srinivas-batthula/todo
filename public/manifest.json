@@ -3,10 +3,10 @@
     "short_name": "Task Manager",
     "description": "An App by ~Srinivas.",
     "start_url": "/todo",
-    "display": "fullscreen",
+    "display": "standalone",
     "scope": "/",
-    "background_color": "#ffffff",
-    "theme_color": "#00796b",
+    "background_color": "#00a2ff",
+    "theme_color": "#00a2ff",
     "icons": [
         {
             "src": "https://srinivas-batthula.github.io/todo/icon.jpg",         
