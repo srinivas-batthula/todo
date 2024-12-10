@@ -4,7 +4,7 @@ const URLS_TO_CACHE = [
     // '/todo',
     '/public',
     '/icon.jpg',
-    '/icon1.png',
+    '/badge.svg',
     '/home.png',
     '/_next/static/*',  // This is to cache Next.js static files
     '/_next/image/*',   // Cache images loaded by Next.js image optimization
@@ -47,7 +47,7 @@ self.addEventListener('push', (event)=>{
     const options = {
         body: data.body,
         icon: './icon.jpg', // Replace with your icon file path if available
-        badge: './icon1.png',
+        badge: './badge.svg',
         vibrate: [150, 80, 150],
         actions: [
             {
