@@ -51,7 +51,7 @@ export default function Complete(){
 
     return(
         <div style={{width:'100%',height:'100vh', top:'0.3rem', marginLeft:'1rem', marginRight:'1rem', overflowX:'hidden', overflowY:'scroll', scrollbarWidth:'thin', scrollBehavior:'smooth'}}>
-            <div style={{marginBottom:'5rem', display:'flex', flexDirection:'column', justifyContent:'center', alignContent:'center', alignItems:'center', textAlign:'center'}}>
+            <div style={{marginTop:'0.4rem', marginBottom:'5rem', display:'flex', flexDirection:'column', justifyContent:'center', alignContent:'center', alignItems:'center', textAlign:'center'}}>
                 <div style={{fontSize:'1.3rem', fontWeight:'600', textAlign:'center', marginBottom:'0.8rem', marginTop:'0.65rem'}}>Your Completed Tasks : </div>
                 {
                     (!tasks || tasks.length===0 || completed!==true) ? <div style={{textAlign:'center', fontSize:'1rem'}}>No Completed Tasks to display</div> : (

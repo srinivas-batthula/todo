@@ -116,7 +116,7 @@ export default function Login() {
     return (
         <div className={styles.main}>
         <div className="container">
-            <div style={{color:'rgb(255, 187, 0)', fontSize:'1.1rem', marginTop:'0.1rem', textAlign:'center', position:'fixed', top:'3px'}}>Please Allow <strong>Cookies</strong> in your Browser!</div>
+            <div style={{color:'rgb(255, 187, 0)', fontSize:'1.1rem', marginTop:'0.4rem', textAlign:'center', position:'fixed', top:'3px'}}>Please Allow <strong>Cookies</strong> in your Browser!</div>
             <h2 className="text-center mb-24 fs-1" style={{marginTop:'3rem'}}>{isRegistering ? 'Register' : 'Login'}</h2>
             <form className="mx-auto">
                 {err && <div className="alert alert-danger">{err}</div>}

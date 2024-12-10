@@ -79,7 +79,7 @@ export default function Data(){
     return(
         <>
             <div className={styles.main}>
-                <div style={{textAlign:'center', fontSize:'1.5rem', fontWeight:'600', marginTop:'1.5rem', textShadow:'-0.2rem 0.1rem 1.5rem'}}>Chart Your Progress </div>
+                <div style={{textAlign:'center', fontSize:'1.5rem', fontWeight:'600', marginTop:'1.8rem', textShadow:'-0.2rem 0.1rem 1.5rem'}}>Chart Your Progress </div>
                 <div style={{marginBottom:'1.6rem'}}>A Smart Analysis of Your Daily tasks</div>
 
                 <div className={styles.main2}>
