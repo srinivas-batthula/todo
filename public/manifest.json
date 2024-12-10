@@ -3,7 +3,7 @@
     "short_name": "Task Manager",
     "description": "An App by ~Srinivas.",
     "start_url": "/todo",
-    "display": "standalone",
+    "display": "fullscreen",
     "scope": "/",
     "background_color": "#ffffff",
     "theme_color": "#00796b",
