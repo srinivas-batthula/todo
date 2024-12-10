@@ -5,8 +5,8 @@
     "start_url": "/todo",
     "display": "fullscreen",
     "scope": "/",
-    "background_color": "#00a2ff",
-    "theme_color": "#00a2ff",
+    "background_color": "linear-gradient(45deg, #5d16a9, #4085fc)",
+    "theme_color": "linear-gradient(45deg, #5d16a9, #4085fc)",
     "icons": [
         {
             "src": "https://srinivas-batthula.github.io/todo/icon.jpg",         

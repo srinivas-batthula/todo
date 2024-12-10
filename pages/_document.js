@@ -8,7 +8,7 @@ class MyDocument extends Document {
                     {/* <link rel="manifest" href="/manifest.json" /> */}
                     <link rel='manifest' href='https://srinivas-batthula.github.io/todo/manifest.json' />
                     {/* Custom fonts, meta tags, or external scripts go here */}
-                    <meta name="theme-color" content="#00a2ff" />
+                    <meta name="theme-color" content="linear-gradient(45deg, #5d16a9, #4085fc)" />
                     <meta name='title' content='Task Manager' />
                     <meta name='author' content='Srinivas Batthula' />
                     <meta name="description" content="Srinivas Batthula Todo Fullstack" />

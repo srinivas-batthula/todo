@@ -79,8 +79,8 @@ export default function Data(){
     return(
         <>
             <div className={styles.main}>
-                <div style={{textAlign:'center', fontSize:'1.5rem', fontWeight:'600', marginTop:'1.8rem', textShadow:'-0.2rem 0.1rem 1.5rem'}}>Chart Your Progress </div>
-                <div style={{marginBottom:'1.6rem'}}>A Smart Analysis of Your Daily tasks</div>
+                <div style={{textAlign:'center', fontSize:'1.5rem', fontWeight:'600', marginTop:'2.2rem', textShadow:'-0.2rem 0.1rem 1.5rem'}}>Chart Your Progress </div>
+                <div style={{marginBottom:'1.9rem'}}>A Smart Analysis of Your Daily tasks</div>
 
                 <div className={styles.main2}>
                     <div className={styles.box} style={{boxShadow:'0 0 1rem lightgreen'}}>
@@ -99,7 +99,7 @@ export default function Data(){
                     }
                 </div>
 
-                <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignContent:'center', alignItems:'center', textAlign:'center', marginTop:'2rem', marginBottom:'6.5rem'}}>
+                <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignContent:'center', alignItems:'center', textAlign:'center', marginTop:'2.3rem', marginBottom:'6.5rem'}}>
                     <div style={{fontSize:'1.3rem', fontWeight:'600', textAlign:'center', marginBottom:'0.6rem'}}>Your Completed Tasks : </div>
                     <Link href='/completed' style={{fontSize:'1.2rem'}}>View Completed Tasks</Link>
                 </div>
