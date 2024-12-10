@@ -116,7 +116,7 @@ export default function Profile() {
                 console.log('Logged Out')
                 setTimeout(()=>{
                     router.push('/login')
-                }, 200)
+                }, 100)
             }
             else{
                 console.log('Error while Logging Out, Try again')
@@ -154,7 +154,7 @@ export default function Profile() {
                 </div>
                 
                 <div className={styles.child} onClick={subscribeToNotifications}>
-                    <button>Allow notifications</button>
+                    <button>Allow notifications <i className="fa-solid fa-bell" style={{fontSize:'1rem', marginLeft:'0.4rem', color:'black', textShadow:'0 0 0.3rem red'}}></i></button>
                 </div>
 
                 <div className={styles.child}>
