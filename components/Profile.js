@@ -155,7 +155,7 @@ export default function Profile() {
 
                 <div className={styles.child} onClick={subscribeToNotifications}>
                     <button style={{display:'flex', flexDirection:'row', justifyContent:'center', alignContent:'center',justifyItems:'center', textAlign:'center'}}>
-                        <i className="fa-solid fa-bell" style={{fontSize:'1.6rem', marginRight:'0.2rem', color:'black', textShadow:'0 0 0.3rem white'}}></i> Notifications
+                        <i className="fa-solid fa-bell" style={{fontSize:'1.2rem', marginRight:'0.2rem', color:'black', textShadow:'0 0 0.3rem white'}}></i> Notifications
                         {
                             (user && user.subscription) ? <i className="fa-solid fa-toggle-on" style={{fontSize:'1.6rem', marginLeft:'0.4rem', color:'green', textShadow:'0 0 0.3rem green'}}></i> : <i className="fa-solid fa-toggle-off" style={{fontSize:'1.6rem', marginLeft:'0.4rem', color:'red', textShadow:'0 0 0.3rem red'}}></i>
                         }
