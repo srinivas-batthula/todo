@@ -25,7 +25,7 @@ export const DataProvider = ({ children }) => {
                 setCompleted(false)
                 setTasks(res.data)
                 setUser(res.user)
-                console.log(user.subscription)
+                console.log(res.user)
                 res.data.map((item)=>{
                     if(item.status==='completed'){
                         setCompleted(true)
