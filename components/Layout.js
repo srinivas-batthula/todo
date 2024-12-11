@@ -16,12 +16,10 @@ const Layout = ({ children }) => {
     const { FetchData } = useContext(DataContext)
 
     useEffect(async() => {
-        // setTimeout(()=>{
-        //     <div style={{width:'100%', height:'100vh', display:'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', textAlign: 'center', backgroundColor: 'rgb(0, 153, 255)', color: 'white'}}>
-        //         <div style={{fontSize:'1.8rem', marginBottom: '0.5rem'}}>WELCOME TO YOUR</div>
-        //         <div style={{fontSize:'2rem'}}><strong>Task Manager</strong></div>
-        //     </div>
-        // }, 400)
+        if(!navigator.cookieEnabled){
+            alert("Please Enable COOKIES in your browser to access all features of this website. (Settings > Privacy&Security > Third-Party cookies, then choose 'Allow third-party cookies')")
+        }
+
         setLoad(true)
         await FetchData()
         setLoad(false)
