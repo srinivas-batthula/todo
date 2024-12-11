@@ -5,6 +5,7 @@ const URLS_TO_CACHE = [
     '/public',
     '/icon.jpg',
     '/badge.svg',
+    '/notification.wav',
     '/home.png',
     '/_next/static/*',  // This is to cache Next.js static files
     '/_next/image/*',   // Cache images loaded by Next.js image optimization
@@ -49,14 +50,15 @@ self.addEventListener('push', (event)=>{
         icon: './icon.jpg', // Replace with your icon file path if available
         badge: './badge.svg',
         vibrate: [150, 80, 150],
+        sound: './notification.wav',
         actions: [
             {
                 action:'open_home',
-                title:'Open App'
+                title:'view'
             },
             {
-                action:'open_profile',
-                title:'Profile'
+                action:'dismiss',
+                title:'dismiss'
             },
         ]
     };
@@ -69,11 +71,8 @@ self.addEventListener('push', (event)=>{
 self.addEventListener('notificationclick', (event)=>{
     const action = event.action
 
-    if(action === 'open_profile'){
+    if(action === 'dismiss'){
         event.notification.close()
-        event.waitUntil(
-            clients.openWindow('https://srinivas-batthula.github.io/todo/profile') // Replace with your desired URL
-        )
     }
 
     else if(action === 'open_home'){
