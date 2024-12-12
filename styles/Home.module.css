@@ -24,7 +24,7 @@
 
 .space {
     margin-top: 0.8rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 6.5rem;
     color: rgb(39, 175, 230);
     text-shadow: 0 0 1rem skyblue;
     font-size: 1.6rem;
@@ -70,7 +70,6 @@
 }
 
 .content{
-    margin-top: 3rem;
     padding-bottom: 100px;
 }
 
