@@ -44,8 +44,8 @@
 
 .graph{
     text-align: center;
-    width: 50%;
-    height: 50%;
+    width: 42%;
+    height: 42%;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -59,7 +59,7 @@
 }
 
 .last{
-    margin-bottom: 8rem;
+    margin-bottom: 6.5rem;
 }
 
 
