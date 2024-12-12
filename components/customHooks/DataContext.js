@@ -7,7 +7,7 @@ export const DataContext = createContext()
 export const DataProvider = ({ children }) => {
     const [user, setUser] = useState({})
     const [tasks, setTasks] = useState([])
-    const [completed, setCompleted] = useState(false)
+    const [completed, setCompleted] = useState(0)
 
     const router = useRouter()
     const FetchData = async() => {
@@ -22,13 +22,13 @@ export const DataProvider = ({ children }) => {
             })
             res = await res.json()
             if (res.status === 'success') {
-                setCompleted(false)
+                setCompleted(0)
                 setTasks(res.data)
                 setUser(res.user)
                 // console.log(res.user)
                 res.data.map((item)=>{
                     if(item.status==='completed'){
-                        setCompleted(true)
+                        setCompleted(completed+=1)
                     }
                 })
                 console.log("Data retrieved...")
@@ -36,7 +36,7 @@ export const DataProvider = ({ children }) => {
             else {
                 setUser({})
                 setTasks([])
-                setCompleted(false)
+                setCompleted(0)
                 console.log('Refresh Failed')
                 // setTimeout(() => {
                 console.log('Please Login to Continue1')
@@ -47,7 +47,7 @@ export const DataProvider = ({ children }) => {
         catch (e) {
             setUser({})
             setTasks([])
-            setCompleted(false)
+            setCompleted(0)
             console.log(e)
             console.log('Please Login to Continue2')
             router.push('/login')
