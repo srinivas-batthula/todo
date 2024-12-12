@@ -3,6 +3,7 @@ const URLS_TO_CACHE = [
     '/',
     // '/todo',
     '/public',
+    '/home.png',
     '/icon.jpg',
     '/badge.svg',
     '/notification.wav',
