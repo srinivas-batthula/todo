@@ -54,6 +54,14 @@
     margin-top: 2rem;
 }
 
+.head{
+    margin-top: 4rem;
+}
+
+.last{
+    margin-bottom: 8rem;
+}
+
 
 
 
@@ -68,6 +76,12 @@
         font-size: 1.1rem;
         width: 43%;
     }
+    .head{
+        margin-top: 2.5rem;
+    }
+    .last{
+        margin-bottom: 6.5rem;
+    }
 }
 @media screen and (max-width:492px) {
     .main2{
@@ -76,6 +90,12 @@
     .box{
         font-size: 1.1rem;
         width: 43%;
+    }
+    .head{
+        margin-top: 2.5rem;
+    }
+    .last{
+        margin-bottom: 6.5rem;
     }
 }
 
@@ -103,5 +123,11 @@
     }
     .box{
         width: 35%;
+    }
+    .head{
+        margin-top: 2.5rem;
+    }
+    .last{
+        margin-bottom: 6.5rem;
     }
 }

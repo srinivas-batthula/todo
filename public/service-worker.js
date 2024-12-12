@@ -7,6 +7,7 @@ const URLS_TO_CACHE = [
     '/badge.svg',
     '/notification.wav',
     '/home.png',
+    '/login.svg',
     '/_next/static/*',  // This is to cache Next.js static files
     '/_next/image/*',   // Cache images loaded by Next.js image optimization
 ];
