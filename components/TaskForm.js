@@ -67,16 +67,17 @@ export default function FormP() {
                     if(res.status==='success'){
                         setErr("")
                         setSuccess("New Task Created Successfully")
+                        
+                        setTimeout(async()=>{
+                            await FetchData()
+                            router.push('/')
+                        }, 600)
                     }
                     else{
                         setSuccess("")
                         setErr("Something went wrong, Please try again!")
+                        console.log(res)
                     }
-
-                    setTimeout(async()=>{
-                        await FetchData()
-                        router.push('/')
-                    }, 1000)
                 }
                 catch (e) {
                     console.log(e)
