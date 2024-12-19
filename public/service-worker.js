@@ -1,8 +1,6 @@
 const CACHE_NAME = 'todo-v1';
 const URLS_TO_CACHE = [
     '/',
-    // '/todo',
-    '/public',
     '/home.png',
     '/icon.jpg',
     '/badge.svg',
