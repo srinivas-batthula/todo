@@ -6,8 +6,8 @@ const URLS_TO_CACHE = [
     'https://srinivas-batthula.github.io/todo/badge.svg',
     'https://srinivas-batthula.github.io/todo/notification.wav',
     'https://srinivas-batthula.github.io/todo/login.svg',
-    '/_next/static/*',  // This is to cache Next.js static files
-    '/_next/image/*',   // Cache images loaded by Next.js image optimization
+    // '/_next/static/*',           // This is to cache Next.js static files
+    // '/_next/image/*',            // Cache images loaded by Next.js image optimization
 ];
 
 self.addEventListener('install', event => {
