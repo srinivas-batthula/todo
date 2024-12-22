@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
 
         fetch('https://todo-backend-1-4u6w.onrender.com/', {
             method: 'GET',
-            credentials: 'include',           //To include all cookies (jwt-tokens)......
+            // credentials: 'include',           //To include all cookies (jwt-tokens)......
             headers:{
                 'Content-Type':'application/json'
             },
