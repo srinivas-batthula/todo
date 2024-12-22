@@ -1,11 +1,11 @@
 const CACHE_NAME = 'todo-v1';
 const URLS_TO_CACHE = [
-    '/',
-    '/home.png',
-    '/icon.jpg',
-    '/badge.svg',
-    '/notification.wav',
-    '/login.svg',
+    'https://srinivas-batthula.github.io/todo/',
+    'https://srinivas-batthula.github.io/todo/home.png',
+    'https://srinivas-batthula.github.io/todo/icon.jpg',
+    'https://srinivas-batthula.github.io/todo/badge.svg',
+    'https://srinivas-batthula.github.io/todo/notification.wav',
+    'https://srinivas-batthula.github.io/todo/login.svg',
     '/_next/static/*',  // This is to cache Next.js static files
     '/_next/image/*',   // Cache images loaded by Next.js image optimization
 ];

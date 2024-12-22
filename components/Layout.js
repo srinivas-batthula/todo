@@ -20,6 +20,14 @@ const Layout = ({ children }) => {
             alert("Please Enable COOKIES in your browser to access all features of this website. (Settings > Privacy&Security > Third-Party cookies, then choose 'Allow third-party cookies')")
         }
 
+        fetch('https://todo-backend-1-4u6w.onrender.com/', {
+            method: 'GET',
+            // credentials: 'include',           //To include all cookies (jwt-tokens)......
+            // headers:{
+            //     'Content-Type':'application/json'
+            // },
+        })
+
         setLoad(true)
         await FetchData()
         setLoad(false)

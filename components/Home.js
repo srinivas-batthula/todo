@@ -37,7 +37,7 @@ export default function Home() {
             if(res.status==='success'){
                 console.log("Task Modified...")
             }
-            FetchData()      //Gets all tasks & Set's New state in Home
+            await FetchData()      //Gets all tasks & Set's New state in Home
         }
         catch (e) {
             console.log(e)
@@ -57,7 +57,7 @@ export default function Home() {
             if(res.status==='success'){
                 console.log("Task Deleted...")
             }
-            FetchData()      //Gets all tasks & Set's New state in Home
+            await FetchData()      //Gets all tasks & Set's New state in Home
         }
         catch (e) {
             console.log(e)
