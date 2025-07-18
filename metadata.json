@@ -3,6 +3,7 @@
             "title": "Task Manager",
             "des": "'Task Manager' is an innovative web app built with MERN stack and PWA features, designed to streamline task organization and productivity. The app features an intuitive UI, Notifications, Secure user-authentication and Offline functionality, ensuring accessibility on the go. Explore how it simplifies everyday planning, and feel free to reach out for any collaboration opportunities!",
             "isOneRepo": "false",
+            "isLiveLink": "false",
             "urlFront": "https://github.com/srinivas-batthula/todo",
             "urlBack": "https://github.com/srinivas-batthula/todo_backend",
             "urlLive": "https://srinivas-batthula.github.io/todo"
