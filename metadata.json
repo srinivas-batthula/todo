@@ -9,13 +9,14 @@
         "NodeJs",
         "ExpressJs",
         "OAuth",
-        "MongoDB"
+        "MongoDB",
+        "IndexedDB"
     ],
     "keyFeatures": [
-        "Create, update, complete & delete tasks with ease",
-        "Get notified via email & push for due tasks",
-        "Strong authentication with JWT & Google OAuth",
-        "Analyze productivity with smart task insights"
+        "Implemented CRUD on tasks using MongoDB",
+        "Integrated Smart Reminders via email & web-push for due tasks",
+        "Integrated Google OAuth & JWT for secure user authentication",
+        "Developed Smart Analytics Dashboard to help users track tasks productivity"
     ],
     "isLiveLink": "true",
     "githubLink": "https://github.com/srinivas-batthula/todo",
