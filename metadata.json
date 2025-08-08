@@ -1,5 +1,5 @@
 {
-    "imgUrl": "/utils/projects/todo_project.png",
+    "imgUrl": "https://srinivas-batthula.github.io/portfolio/utils/projects/todo_project.png",
     "title": "Task Manager",
     "description": "Task Manager – MERN-based PWA for smart task tracking with auth, offline access, and notifications.",
     "techStack": [
